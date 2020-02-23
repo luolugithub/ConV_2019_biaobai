@@ -48,6 +48,7 @@ ax_U = fig.add_subplot(2, 4, 7)
 ax_heart = fig.add_subplot(2, 4, 8)
 
 plt.plot(colos='tomato')
+
 ax_L.plot(l, L)
 ax_O.plot(o, O)
 ax_V.plot(v, V)
@@ -56,7 +57,11 @@ ax_Y.plot(y, Y)
 ax_Y.axis([-10.0, 10.0, -10.0, 5.0])
 ax_O_2.plot(o, O)
 ax_U.plot(u, U)
+plt.xlabel("LUOLU")
+plt.ylabel("WANGLI")
+
 ax_heart.scatter(heart_x, heart_y, s=10, alpha=0.5)
+
 
 seaborn.set_style('whitegrid')
 
